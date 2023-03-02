@@ -31,11 +31,30 @@
 
 {/*  GIT */}
 // rm -rf .git
-// echo "# final" >> README.md
 // git init
 // git add .
-// git commit -m "first commit"
-// git remote add origin https://github.com/larserra/finals.git
+// git commit -m "comment"
 // git branch -M master
+// git remote add origin https://github.com/larserra/react-js.git
 // git push -u origin master
+
+
+// git remote add origin https://github.com/larserra/react-js.git
+// git branch -M main
+// git push -u origin main
+
+// ===========================================================
+
+// rm -rf .git
+// git init
+// git add .
+// git commit -m "comment"
+// git branch -M master
+// git remote add origin https://github.com/larserra/django-rf.git
+// git push -u origin master
+
+
+// git remote add origin https://github.com/larserra/django-rf.git
+// git branch -M main
+// git push -u origin main
 
