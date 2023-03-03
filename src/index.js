@@ -16,18 +16,18 @@ import "react-toastify/dist/ReactToastify.css";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 
+//===========================================IMPORT SLICE
+import cartReducer from './redux/cartSlice'
 
+
+//===========================================
+//===========================================
 
 export const store = configureStore({ 
-
   reducer : {
-
-},
-
-
+    cart: cartReducer,
+  },
 });
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

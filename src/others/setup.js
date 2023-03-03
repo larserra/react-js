@@ -19,6 +19,13 @@
 // npm install react-bootstrap bootstrap axios react-router-dom react-router-bootstrap @reduxjs/toolkit react-redux react-toastify				
 // optional npm audit fix --force	
 
+
+{/*  SETUP RTK */}
+
+//npm install @reduxjs/toolkit react0redux
+
+
+
 {/*  SETUP others*/}
 
 // VSCODE	python, pylance, mysql, sqlite, interpreter, tag, es7, raindow bracket, icons							
