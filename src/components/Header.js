@@ -1,8 +1,16 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown, Badge } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import {CartIcons} from './Icons'
+import {useSelector} from 'react-redux'
+
 
 const Header = () => {
+
+const {amount} = useSelector((store)=> store.cart)
+
+
+
   return (
     <Navbar bg="dark" expand="lg" variant="dark" sticky="top">
       <Container fluid>
@@ -57,12 +65,8 @@ const Header = () => {
           </Form> */}
           
               <div>
-             
-
-             <span style={{fontSize: '48px', color: 'green'}}>
-             <i class="fas fa-luggage-cart fa-beat"></i>
-             </span>
-             <Badge bg='danger' pill='true'>9</Badge>
+             <CartIcons/>
+             <Badge bg='danger' pill='true'>{amount}</Badge>
              </div> 
             <LinkContainer to="/">
               <Nav.Link >Register</Nav.Link>
