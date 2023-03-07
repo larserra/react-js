@@ -8,6 +8,8 @@ import DashBoard from './pages/DashBoard'
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Ecommerces from './pages/Ecommerces';
+
 
 import Rjs from './others/Rjs'
 import Rcss from './others/Rcss'
@@ -28,7 +30,7 @@ const App = () => {
       <Route exact path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
-
+      <Route path="/ecom" element={<Ecommerces />} />
       {/* <Route path="/products/:id" element={<ProductDetails/>} /> */}
       {/* <Route path="/cart/" element={<Cart />} />
 

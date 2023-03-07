@@ -50,8 +50,11 @@ const {amount} = useSelector((store)=> store.cart)
                 </NavDropdown.Item>
               </LinkContainer>
             </NavDropdown>
+            <LinkContainer to="/ecom">
+              <Nav.Link >Ecommerces</Nav.Link>
+            </LinkContainer>
             <LinkContainer to="/contact">
-              <Nav.Link href="#">Contacts</Nav.Link>
+              <Nav.Link >Contacts</Nav.Link>
             </LinkContainer>
          
           {/* <Form className="d-flex">
