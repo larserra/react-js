@@ -17,7 +17,9 @@ const dispatch = useDispatch()
         
         <button onClick={()=>{dispatch(increase({id}))}}>UP</button>
         <p>{amount}</p>
-        <button onClick={()=>{dispatch(decrease({id}))}}>Down</button>
+        <button onClick={()=>{
+          if (amount === 1) {dispatch(removeItem(id))}
+          dispatch(decrease({id}))}}>Down</button>
 
 
 
