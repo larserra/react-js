@@ -18,7 +18,7 @@ import { Provider } from "react-redux";
 
 //===========================================IMPORT SLICE
 import cartReducer from './redux/cartSlice'
-
+import modalReducer from './redux/modalSlice'
 
 //===========================================
 //===========================================
@@ -26,6 +26,7 @@ import cartReducer from './redux/cartSlice'
 export const store = configureStore({ 
   reducer : {
     cart: cartReducer,
+    modal: modalReducer,
   },
 });
 

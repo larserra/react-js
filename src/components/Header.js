@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown, Badge } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import {CartIcons} from './Icons'
+import {CartIcons} from './template/Icons'
 import {useSelector} from 'react-redux'
 
 
 const Header = () => {
 
-const {amount} = useSelector((store)=> store.cart)
+const {quantity} = useSelector((store)=> store.cart)
 
 
 
@@ -38,21 +38,19 @@ const {amount} = useSelector((store)=> store.cart)
               <NavDropdown.Item href="#action4">Portfolio</NavDropdown.Item>
 
               <NavDropdown.Divider />
-              <LinkContainer to="react-js++/">
+              <LinkContainer to="/">
                 <NavDropdown.Item>Code REACT JS ++</NavDropdown.Item>
               </LinkContainer>
-              <LinkContainer to="react-css++/">
+              <LinkContainer to="/">
                 <NavDropdown.Item>Code REACT CSS ++</NavDropdown.Item>
               </LinkContainer>
-              <LinkContainer to="python-drf++/">
+              <LinkContainer to="/">
                 <NavDropdown.Item>
                   Code DJANGO REST FRAMEWORK ++
                 </NavDropdown.Item>
               </LinkContainer>
             </NavDropdown>
-            <LinkContainer to="/ecom">
-              <Nav.Link >Ecommerces</Nav.Link>
-            </LinkContainer>
+            
             <LinkContainer to="/contact">
               <Nav.Link >Contacts</Nav.Link>
             </LinkContainer>
@@ -68,8 +66,15 @@ const {amount} = useSelector((store)=> store.cart)
           </Form> */}
           
               <div>
-             <CartIcons/>
-             <Badge bg='danger' pill='true'>{amount}</Badge>
+              <LinkContainer to="/cart">
+              <Nav.Link >
+              <CartIcons/>
+              <Badge bg='danger' pill='true'>
+              {quantity}
+              </Badge>
+              </Nav.Link>
+             </LinkContainer>
+             
              </div> 
             <LinkContainer to="/">
               <Nav.Link >Register</Nav.Link>
