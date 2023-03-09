@@ -7,7 +7,7 @@ import {useSelector} from 'react-redux'
 
 const Header = () => {
 
-const {quantity} = useSelector((store)=> store.cart)
+const {quantity} = useSelector((state)=> state.cart)
 
 
 
@@ -31,6 +31,9 @@ const {quantity} = useSelector((store)=> store.cart)
             </LinkContainer>
             <LinkContainer to="about/">
               <Nav.Link href="#action2">About</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="products/">
+              <Nav.Link >Products</Nav.Link>
             </LinkContainer>
             <NavDropdown title="Others" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Resume</NavDropdown.Item>
