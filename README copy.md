@@ -58,3 +58,15 @@ git push -u origin master
 git remote add origin https://github.com/larserra/django-rf.git
 git branch -M main
 git push -u origin main
+
+
+const submitReg = async () => {
+    e.preventDefault():
+    await axios.post('company/register, data:{first_name: firstname,}')
+}
+
+const submitLog = async () => {
+    e.preventDefault():
+    const response = await axios.post(company/login, data:{email, passwordconfig:{withCredentials:true}})    
+
+}
