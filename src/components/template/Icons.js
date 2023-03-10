@@ -12,6 +12,31 @@ export const UpIcons = () => {
 export const DownIcons = () => {
   return (<span style={{fontSize: '1rem'}}><i className="fa-solid fa-caret-down "></i></span>)}
 
- <i className="fas fa-luggage-cart fa-beat"></i> 
+ 
  export const RemoveAllIcons = () => {
   return (<span style={{fontSize: '1rem'}}><i className="fa-solid fa-trash-can"></i></span>)}
+
+
+
+ export const RegisterIcons = () => {
+  return (<span style={{fontSize: '2rem'}}><i class="fa-regular fa-registered"></i></span>)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <i className="fas fa-luggage-cart fa-beat"></i> 
+
+
+
+  

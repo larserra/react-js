@@ -79,7 +79,7 @@ const {quantity} = useSelector((state)=> state.cart)
              </LinkContainer>
              
              </div> 
-            <LinkContainer to="/">
+            <LinkContainer to="/register">
               <Nav.Link >Register</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/">
