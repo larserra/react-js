@@ -22,7 +22,9 @@ export const DownIcons = () => {
   return (<span style={{fontSize: '2rem'}}><i class="fa-regular fa-registered"></i></span>)}
 
 
-
+  export const SigninIcons = () => {
+    return (<span style={{fontSize: '2rem'}}><i class="fa-solid fa-right-to-bracket"></i></span>)}
+  
 
 
 
