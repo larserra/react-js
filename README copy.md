@@ -59,6 +59,7 @@ git remote add origin https://github.com/larserra/django-rf.git
 git branch -M main
 git push -u origin main
 
+=================================================================
 
 const submitReg = async () => {
     e.preventDefault():
@@ -70,3 +71,18 @@ const submitLog = async () => {
     const response = await axios.post(company/login, data:{email, passwordconfig:{withCredentials:true}})    
 
 }
+
+
+=====================================================================
+
+pages - HomePage, AboutPage, Others, ProductPage, CartPage, ContactPage, RegisterPage, LoginPage, DashboardPage, ForgotPage, ResetPage, PageNotFound
+
+redux - authSlice, CartSlice, modalSlice, ProductSlice, 
+
+Components
+	Alert, modal, toastify, ProductItems, CartItem, Form, Icons, 
+	Rating, 
+	
+	Header, Footer, ProtectRouth
+
+Static - JS, CSS, Images
